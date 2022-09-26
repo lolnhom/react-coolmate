@@ -1,0 +1,13 @@
+@import 'mixin';
+body {
+    background-color: $text-color;
+}
+
+.container {
+    background-color: blue;
+    padding: 40px 60px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 50px;
+    @include contentCenter;
+}
