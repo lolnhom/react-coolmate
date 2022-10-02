@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.scss";
 import PostList from "./Menu";
 import Menu from "./Menu";
-import logo1 from "../../assets/logo-coolmate.svg";
+import logo1 from "../../assets/image/logo-coolmate.svg";
 
 function Header() {
   const [postList, setPostList] = useState([]);
@@ -13,14 +13,12 @@ function Header() {
   const handleMouseLeave = (e) => {
     e.target.style.background = "#f9f86c";
   };
-  const handleMouseLeave1 = (e) => {
-    e.target.style.background = "#ffff";
-  };
 
   const sales = [
     "Nhập CHAOBAN giảm 50% tối đa 100K cho đơn hàng đầu tiên",
     "ƯU ĐÃI SIÊU SỐC CHỈ TỪ 99K",
     "ƯU ĐÃI GIẢM ĐẾN 50%",
+    "ƯU ĐÃI ĐỒ MẶC HÀNG NGÀY GIẢM ĐẾN 20%",
   ];
   useEffect(() => {
     async function fetchPostList() {
@@ -37,12 +35,12 @@ function Header() {
     return () => clearInterval(id);
   }, []);
   return (
-    <div
-      className="header"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div className="header__title">
+    <div className="header">
+      <div
+        className="header__title"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <a href="#">{sales[index % sales.length]}</a>
       </div>
       <div className="header__menu">
@@ -51,7 +49,8 @@ function Header() {
             <img src={logo1} alt="logo-coolmate" />
           </a>
         </div>
-        <Menu posts={postList} />
+        <Menu posts={postList} className="menuList" />
+        <div className="social"></div>
       </div>
     </div>
   );

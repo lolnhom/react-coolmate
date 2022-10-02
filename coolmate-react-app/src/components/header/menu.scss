@@ -1,3 +1,108 @@
-.menu{
+@use "../../scss/variables" as *;
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+
+/*----- Phần menu -----*/
+.menu {}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+}
+
+.menu a {
+    transition: all linear 0.15s;
+    color: #919191;
+    text-decoration: none;
+}
+
+
+
+.menu .arrow {
+    font-size: 11px;
+    line-height: 0%;
+}
+
+/*----- css cho phần menu cha -----*/
+.menu>ul>li {
+    float: left;
+    display: inline-block;
+    // position:relative;
+    font-size: 19px;
+}
+
+.menu>ul>li>a {
+    padding: 10px 40px;
+    display: inline-block;
+    color: #231F20;
+}
+
+.menu>ul>li:hover>a {
+    color: #8e8e8e;
+    background-color: $light-yellow;
+}
+
+/*----css cho menu con----*/
+.menu li:hover .sub-menu {
     display: flex;
+}
+
+.sub-menu {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    display: none;
+    transition: opacity linear 0.15s;
+}
+
+
+.sub-menu li {
+    display: block;
+    font-size: 16px;
+}
+
+.sub-menu li a {
+    padding: 5px 30px;
+    display: block;
+}
+
+.sub-menu__link {
+    color: #8e8e8e;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0px 0px 20px;
+}
+
+
+.sub-menu__list2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu__list2 a:hover {
+    color: blue;
+}
+
+.sub-menu__list2>a {
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+}
+.sub-menu__list2 >div>a{
+    font-size: 10.4px;
+    color: #000;
+    font-weight: bold;
+}
+
+.clearfix>li>a {
+    font-size: 13px;
+    color: #231F20;
+    font-weight: bold;
 }

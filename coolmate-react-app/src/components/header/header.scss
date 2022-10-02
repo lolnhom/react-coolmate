@@ -1,7 +1,11 @@
 @use  "../../scss/mixin" as *;
+@use  "../../scss/variables" as *;
 
+.header{
+    position: relative;
+}
 .header__title{
-    @include contentCenter;
+    @include contentCenter(center,center);
     background-color:#f9f86c ;
     padding: 7px 0px;
     cursor: pointer;
@@ -17,11 +21,22 @@
 .header__menu{
     padding: 0 64px;
     display: flex;
-    align-items: center;
+
    
     .logo{
+        flex: 1;
         img{
             width: 95px;
         }
     }
+    .menuList{
+        flex: 2;
+    }
+    .social{
+        flex: 1;
+    }
 }
+.header__title:hover +.header__menu{
+    background-color:$light-yellow;
+}
+
