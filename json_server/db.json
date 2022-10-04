@@ -1,0 +1,321 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Sản phẩm",
+      "children1": [
+        {
+          "id": 2,
+          "name": "Áo nam",
+          "children2": [
+            "Áo Tank top",
+            "Áo T-shirt",
+            "Áo Polo",
+            "Áo Sơ mi",
+            "Áo Thể thao",
+            "Áo In Hình",
+            "Áo Khoác thể thao"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Quần nam",
+          "children2": ["Quần Lót nam", "Quần Shorts", "Quần Jeans", "Quần Dài"]
+        },
+        {
+          "id": 4,
+          "name": "Phụ kiện",
+          "children2": ["Mũ (Nón)", "Tất (Vớ)"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bộ sưu tập",
+      "children1": [
+        {
+          "id": 6,
+          "name": "Vũ trụ áo Marvel",
+          "children2": ["Ưu đãi trải nghiệm hấp dẫn"]
+        },
+        {
+          "id": 7,
+          "name": "Clean Vietnam",
+          "children2": ["Sự kết hợp giữa Coolmate & Vietmax"]
+        },
+        {
+          "id": 8,
+          "name": "Coolmate Basics",
+          "children2": ["BST giá rẻ - chất lượng"]
+        },
+        {
+          "id": 9,
+          "name": "Care & Share",
+          "children2": ["10% doanh thu dành cho các bé"]
+        },
+        {
+          "id": 10,
+          "name": "Sản phẩm bền vững",
+          "children2": ["Sản phẩm thân thiện với môi trường"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Nhu cầu",
+      "children1": [
+        {
+          "id": 12,
+          "name": "Mặc ở nhà và Mặc trong",
+          "children2": ["Homewear & Underwear"]
+        },
+        {
+          "id": 13,
+          "name": "Mặc hàng ngày",
+          "children2": ["Casualwear"]
+        },
+        {
+          "id": 14,
+          "name": "Đồ thể thao",
+          "children2": ["Coolmate active"]
+        },
+        {
+          "id": 15,
+          "name": "Phụ kiện",
+          "children2": ["Accesories"]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Công nghệ",
+      "children1": [
+        {
+          "id": 17,
+          "name": "Excool",
+          "children2": ["Công nghệ làm mát tối đa"]
+        },
+        {
+          "id": 18,
+          "name": "Cleandye",
+          "children2": ["10% Nhuộm không dùng nước"]
+        },
+        {
+          "id": 19,
+          "name": "HeiQ Viroblock",
+          "children2": ["Diệt 99.99% virus SARC-CoV2"]
+        },
+        {
+          "id": 20,
+          "name": "Anti-smell",
+          "children2": ["Công nghệ khử mùi từ Nhật Bản"]
+        }
+      ]
+    }
+  ],
+  "menu": [
+    { "id": 1, "name": "Outlet" },
+    { "id": 2, "name": "Combo Tiết kiệm" },
+    {
+      "name": "Sản phẩm",
+      "id": 3,
+      "children": [
+        {
+          "name": "Nhu cầu",
+          "id": 1,
+          "children": [
+            {
+              "id": 1,
+              "name": "Mặc nhà & Mặc trong",
+              "children": ["Homewear & Underwear"]
+            },
+            {
+              "id": 2,
+              "name": "Mặc hàng ngày",
+              "children": ["Casualwear"]
+            },
+            {
+              "id": 3,
+              "name": "Đồ thể thao",
+              "children": ["Activewear"]
+            },
+            {
+              "id": 4,
+              "name": "Phụ kiện",
+              "children": ["Accesories"]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Danh mục",
+          "children": [
+            {
+              "id": 1,
+              "name": "Áo nam",
+              "children": [
+                "Áo Tank top",
+                "Áo T-shirt",
+                "Áo Polo",
+                "Áo Sơ mi",
+                "Áo Thể thao",
+                "Áo In hình",
+                "Áo Khoác thể thao"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Phụ Kiện",
+              "children": ["Mũ (Nón)", "Tất (Vớ)"]
+            },
+            {
+              "id": 3,
+              "name": "Quần nam",
+              "children": ["Quần Shorts", "Quần Jeans", "Quần Dài"]
+            },
+            {
+              "id": 4,
+              "name": "Quần Lót Nam",
+              "children": [
+                "Quần Brief (Tam giác)",
+                "Quần Trunk (Boxer)",
+                "Quần Brief Boxer",
+                "Boxer dài"
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Tất cả sản phẩm",
+              "children": []
+            },
+            {
+              "id": 6,
+              "name": "Boxer đồ nam",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bộ Sưu tập",
+          "id": 3,
+          "children": [
+            {
+              "id": 1,
+              "name": "Vũ trụ áo Marvel",
+              "children": ["Ưu đãi trải nghiệm hấp dẫn"]
+            },
+            {
+              "id": 2,
+              "name": "Clean Vietnam",
+              "children": ["Sự kết hợp giữa Coolmate và Vietmax"]
+            },
+            {
+              "id": 3,
+              "name": "Coolmate basics",
+              "children": ["BST giá rẻ - chất lượng"]
+            },
+            {
+              "id": 4,
+              "name": "Care & Share",
+              "children": ["10% doanh thu dhàn cho các bé"]
+            },
+            {
+              "id": 5,
+              "name": "Sản phẩm bền vững",
+              "children": ["Sản phẩm thân thiện với môi trường"]
+            }
+          ]
+        },
+        {
+          "name": "Công nghệ",
+          "id": 4,
+          "children": [
+            {
+              "id": 1,
+              "name": "Excool",
+              "children": ["Công nghệ làm mát tối đa"]
+            },
+            {
+              "id": 2,
+              "name": "Cleandye",
+              "children": ["Nhuộm không dùng nước"]
+            },
+            {
+              "id": 3,
+              "name": "HeiQ Viroblock",
+              "children": ["Diệt 99.99% virus SARS-CoV2"]
+            },
+            {
+              "id": 4,
+              "name": "Anti-Smell",
+              "children": ["Công khử mùi từ Nhật Bản"]
+            },
+            {
+              "id": 5,
+              "src": "https://mcdn.coolmate.me/image/August2022/Banner-Marvel-LDP_(3)_(1)_(1).jpg"
+            }
+          ]
+        }
+      ]
+    },
+    { "id": 4, "name": "Coolxprint" },
+    {
+      "id": 5,
+      "name": "Về Coolmate",
+      "children": [
+        {
+          "id": 1,
+          "src": "https://mcdn.coolmate.me/image/August2022/mceclip0_97.jpg",
+          "title": "Coolmate 101",
+          "description": "Tất cả những gì bạn muốn biết về Coolmate và gia nhập Coolmate"
+        },
+        {
+          "id": 2,
+          "src": "https://mcdn.coolmate.me/image/August2022/mceclip1_92.jpg",
+          "title": "Dịch vụ 100% hài lòng",
+          "description": "Bật mí 11 dịch vụ Coolmate cam kết với khách hàng"
+        },
+        {
+          "id": 3,
+          "src": "https://mcdn.coolmate.me/image/August2022/mceclip2_100.jpg",
+          "title": "Coolmate - Khách hàng thân thiết",
+          "description": "Những ưu đãi hấp dẫn dành cho khách hàng thân thiết"
+        },
+        {
+          "id": 4,
+          "src": "https://mcdn.coolmate.me/image/August2022/mceclip3_34.jpg",
+          "title": "Câu chuyện",
+          "description": "Về Startup vơi mô hình Online D2C"
+        }
+      ]
+    },
+
+    { "id": 6, "name": "Chọn size" }
+  ],
+  "coolmateSefl": [
+    {
+      "id": 1,
+      "src": "https://mcdn.coolmate.me/image/August2022/mceclip0_97.jpg",
+      "title": "Coolmate 101",
+      "description": "Tất cả những gì bạn muốn biết về Coolmate và gia nhập Coolmate"
+    },
+    {
+      "id": 2,
+      "src": "https://mcdn.coolmate.me/image/August2022/mceclip1_92.jpg",
+      "title": "Dịch vụ 100% hài lòng",
+      "description": "Bật mí 11 dịch vụ Coolmate cam kết với khách hàng"
+    },
+    {
+      "id": 3,
+      "src": "https://mcdn.coolmate.me/image/August2022/mceclip2_100.jpg",
+      "title": "Coolmate - Khách hàng thân thiết",
+      "description": "Những ưu đãi hấp dẫn dành cho khách hàng thân thiết"
+    },
+    {
+      "id": 4,
+      "src": "https://mcdn.coolmate.me/image/August2022/mceclip3_34.jpg",
+      "title": "Câu chuyện",
+      "description": "Về Startup vơi mô hình Online D2C"
+    }
+  ]
+}

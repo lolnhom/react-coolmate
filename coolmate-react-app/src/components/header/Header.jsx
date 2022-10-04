@@ -3,6 +3,7 @@ import "./header.scss";
 import PostList from "./Menu";
 import Menu from "./Menu";
 import logo1 from "../../assets/image/logo-coolmate.svg";
+import UseRef from "../example/UseRef";
 
 function Header() {
   const [postList, setPostList] = useState([]);
@@ -51,6 +52,17 @@ function Header() {
         </div>
         <Menu posts={postList} className="menuList" />
         <div className="social"></div>
+        <div>
+          <label for="avatar">Choose a profile picture:</label>
+
+          <input
+            type="file"
+            id="avatar"
+            name="avatar"
+            accept="image/png, image/jpeg"
+          />
+          <UseRef />
+        </div>
       </div>
     </div>
   );
