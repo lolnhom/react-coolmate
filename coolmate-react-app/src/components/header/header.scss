@@ -1,42 +1,67 @@
-@use  "../../scss/mixin" as *;
-@use  "../../scss/variables" as *;
+@use "../../scss/variables" as *;
+@use "../../scss/mixin" as *;
 
-.header{
+
+.header {
     position: relative;
-}
-.header__title{
-    @include contentCenter(center,center);
-    background-color:#f9f86c ;
-    padding: 7px 0px;
-    cursor: pointer;
-    text-transform: uppercase;
-    a{
-        text-decoration: none;
-        color: #000;
-        font-weight: bold;
-        font-size: 13px;
-    }
-}
+    border-bottom: 1px solid #d9d9d9;
+    transition: all .3s;
 
-.header__menu{
-    padding: 0 64px;
-    display: flex;
+    &__title {
+        @include contentCenter(center, center);
+        background-color: #f9f86c;
+        padding: 8px 0px;
+        cursor: pointer;
+        text-transform: uppercase;
 
-   
-    .logo{
-        flex: 1;
-        img{
-            width: 95px;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 13px;
         }
     }
-    .menuList{
-        flex: 2;
+
+    &__menu {
+        padding: 0 64px;
+        display: flex;
+
+
+        .logo {
+            flex: 1;
+            @include contentCenter(start, center);
+
+            img {
+                width: 95px;
+            }
+        }
+
+        .menuList {
+            flex: 2;
+        }
+
+        .social {
+            flex: 1;
+        }
+
+        &:hover {
+            background-color: $light-yellow;
+        }
+        
     }
     .social{
         flex: 1;
+        @include contentCenter(end,center);
+        img:not(:last-child){
+            margin-right: 20px;
+            cursor: pointer;
+        }
     }
-}
-.header__title:hover +.header__menu{
-    background-color:$light-yellow;
-}
 
+}
+.header__title:hover+.header__menu {
+    background-color: $light-yellow;
+}
+.header__menu:hover ~.header__menu {
+    background-color: blue;
+}

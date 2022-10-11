@@ -127,22 +127,22 @@
             {
               "id": 1,
               "name": "Mặc nhà & Mặc trong",
-              "children": ["Homewear & Underwear"]
+              "note": ["Homewear & Underwear"]
             },
             {
               "id": 2,
               "name": "Mặc hàng ngày",
-              "children": ["Casualwear"]
+              "note": ["Casualwear"]
             },
             {
               "id": 3,
               "name": "Đồ thể thao",
-              "children": ["Activewear"]
+              "note": ["Activewear"]
             },
             {
               "id": 4,
               "name": "Phụ kiện",
-              "children": ["Accesories"]
+              "note": ["Accesories"]
             }
           ]
         },
@@ -154,24 +154,70 @@
               "id": 1,
               "name": "Áo nam",
               "children": [
-                "Áo Tank top",
-                "Áo T-shirt",
-                "Áo Polo",
-                "Áo Sơ mi",
-                "Áo Thể thao",
-                "Áo In hình",
-                "Áo Khoác thể thao"
+                {
+                  "id": 1,
+                  "type": "Áo Tank top"
+                },
+                {
+                  "id": 2,
+                  "type": "Áo T-shirt"
+                },
+                {
+                  "id": 3,
+                  "type": "Áo T-shirt"
+                },
+                {
+                  "id": 4,
+                  "type": "Áo Polo"
+                },
+
+                {
+                  "id": 5,
+                  "type": "Áo Thể thao"
+                },
+
+                {
+                  "id": 6,
+                  "type": "Áo In hình"
+                },
+                {
+                  "id": 7,
+                  "type": "Áo Khoác thể thao"
+                }
               ]
             },
             {
               "id": 2,
               "name": "Phụ Kiện",
-              "children": ["Mũ (Nón)", "Tất (Vớ)"]
+              "children": [
+                {
+                  "id": 1,
+                  "type": "Mũ (Nón)"
+                },
+                {
+                  "id": 2,
+                  "type": "Tất (Vớ)"
+                }
+              ]
             },
             {
               "id": 3,
               "name": "Quần nam",
-              "children": ["Quần Shorts", "Quần Jeans", "Quần Dài"]
+              "children": [
+                {
+                  "id": 1,
+                  "type": "Quần Shorts"
+                },
+                {
+                  "id": 2,
+                  "type": "Quần Jeans"
+                },
+
+                {
+                  "id": 3,
+                  "type": "Quần Dài"
+                }
+              ]
             },
             {
               "id": 4,
@@ -202,27 +248,27 @@
             {
               "id": 1,
               "name": "Vũ trụ áo Marvel",
-              "children": ["Ưu đãi trải nghiệm hấp dẫn"]
+              "note": ["Ưu đãi trải nghiệm hấp dẫn"]
             },
             {
               "id": 2,
               "name": "Clean Vietnam",
-              "children": ["Sự kết hợp giữa Coolmate và Vietmax"]
+              "note": ["Sự kết hợp giữa Coolmate và Vietmax"]
             },
             {
               "id": 3,
               "name": "Coolmate basics",
-              "children": ["BST giá rẻ - chất lượng"]
+              "note": ["BST giá rẻ - chất lượng"]
             },
             {
               "id": 4,
               "name": "Care & Share",
-              "children": ["10% doanh thu dhàn cho các bé"]
+              "note": ["10% doanh thu dhàn cho các bé"]
             },
             {
               "id": 5,
               "name": "Sản phẩm bền vững",
-              "children": ["Sản phẩm thân thiện với môi trường"]
+              "note": ["Sản phẩm thân thiện với môi trường"]
             }
           ]
         },
@@ -233,22 +279,22 @@
             {
               "id": 1,
               "name": "Excool",
-              "children": ["Công nghệ làm mát tối đa"]
+              "note": ["Công nghệ làm mát tối đa"]
             },
             {
               "id": 2,
               "name": "Cleandye",
-              "children": ["Nhuộm không dùng nước"]
+              "note": ["Nhuộm không dùng nước"]
             },
             {
               "id": 3,
               "name": "HeiQ Viroblock",
-              "children": ["Diệt 99.99% virus SARS-CoV2"]
+              "note": ["Diệt 99.99% virus SARS-CoV2"]
             },
             {
               "id": 4,
               "name": "Anti-Smell",
-              "children": ["Công khử mùi từ Nhật Bản"]
+              "note": ["Công khử mùi từ Nhật Bản"]
             },
             {
               "id": 5,

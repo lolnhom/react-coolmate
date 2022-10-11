@@ -1,13 +1,19 @@
 @use "../../scss/variables" as *;
+@use "../../scss/mixin" as *;
+@use "../../scss/globals" as *;
 
 .clearfix:after {
     display: block;
     clear: both;
 }
+.clearfix{
+    margin: 0px;
+}
 
-
-/*----- Phần menu -----*/
-.menu {}
+.menu {
+    @include contentCenter(center, center);
+    height: 50px;
+}
 
 .menu li {
     margin: 0px;
@@ -31,13 +37,13 @@
 .menu>ul>li {
     float: left;
     display: inline-block;
-    // position:relative;
     font-size: 19px;
 }
 
 .menu>ul>li>a {
-    padding: 10px 40px;
-    display: inline-block;
+    padding: 0px 30px;
+    display: block;
+    height: 100%;
     color: #231F20;
 }
 
@@ -52,14 +58,31 @@
 }
 
 .sub-menu {
+    margin-top: 6px;
+    
+    background-color: #ffff;
     display: flex;
     width: 100vw;
     justify-content: center;
     position: absolute;
-    top: 90%;
+    top: 79px;
     left: 0px;
     display: none;
     transition: opacity linear 0.15s;
+    z-index: 99999999;
+}
+
+.sub-menu::after {
+    content: "";
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    right: 53%;
+    top: -41px;
+}
+.sub-menu ul{
+  padding: 0px;
 }
 
 
@@ -80,6 +103,9 @@
     margin: 0px 0px 20px;
 }
 
+.sub-menu__link:hover {
+    color: $orange-color;
+}
 
 .sub-menu__list2 {
     display: flex;
@@ -87,7 +113,7 @@
 }
 
 .sub-menu__list2 a:hover {
-    color: blue;
+    color: #2f5acf;
 }
 
 .sub-menu__list2>a {
@@ -95,10 +121,26 @@
     font-size: 13px;
     color: #000;
 }
-.sub-menu__list2 >div>a{
+
+.sub-menu__list2>div>a {
     font-size: 10.4px;
     color: #000;
     font-weight: bold;
+}
+.type p{
+margin: 0px;
+}
+.type p:nth-child(2) {
+    font-size: 10px;
+    margin-top: 5px;
+}
+.list-type ul{
+    padding: 0px;
+}
+
+.list-type>ul>li>a {
+    padding: 6px 0px;
+    font-size: 13px;
 }
 
 .clearfix>li>a {

@@ -20,10 +20,21 @@ function Menu({ posts = [] }) {
                         {pot?.children?.map((pt) => {
                           return (
                             <li key={pt.id} className="sub-menu__list2">
-                              <a href="#">{pt.name}</a>
-                              <div>
-                                <a href="#">{pt.children}</a>
-                              </div>
+                              <a href="#" className="type">
+                                <p>{pt.name}</p>
+                                <p> {pt.note}</p>
+                              </a>
+                              <a href="#" className="list-type">
+                                <ul>
+                                  {pt?.children?.map((p) => {
+                                    return (
+                                      <li key={p.id}>
+                                        <a href="#">{p.type}</a>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              </a>
                             </li>
                           );
                         })}

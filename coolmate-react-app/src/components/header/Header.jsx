@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./header.scss";
-import PostList from "./Menu";
-import Menu from "./Menu";
+import account from "../../assets/image/icon-account.svg";
+import cart from "../../assets/image/icon-cart.svg";
 import logo1 from "../../assets/image/logo-coolmate.svg";
-import UseRef from "../example/UseRef";
+import search from "../../assets/image/icon-search.svg";
+import "./header.scss";
+import Menu from "./Menu";
+import ModalUser from "../slide/Modal";
 
 function Header() {
   const [postList, setPostList] = useState([]);
@@ -51,17 +53,11 @@ function Header() {
           </a>
         </div>
         <Menu posts={postList} className="menuList" />
-        <div className="social"></div>
-        <div>
-          <label for="avatar">Choose a profile picture:</label>
-
-          <input
-            type="file"
-            id="avatar"
-            name="avatar"
-            accept="image/png, image/jpeg"
-          />
-          <UseRef />
+        <div className="social">
+          <img src={search} alt="search-icon" />
+          {/* <img src={account} alt="account-icon" /> */}
+          <ModalUser />
+          <img src={cart} alt="cart-icon" />
         </div>
       </div>
     </div>
